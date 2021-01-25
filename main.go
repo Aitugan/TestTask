@@ -25,6 +25,6 @@ func init() {
 func main() {
 	router := routes.NewRoutes()
 
-	fmt.Println("Connected to 8083")
-	log.Fatal(http.ListenAndServe(":8083", router))
+	fmt.Println("Connected to 8000")
+	log.Fatal(http.ListenAndServe(":8000", router))
 }

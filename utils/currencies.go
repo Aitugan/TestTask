@@ -1,14 +1,13 @@
 package utils
 
 import (
-	"os"
 	"strconv"
 
 	"github.com/Aitugan/currapi/models"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
 
-var URL = os.Getenv("URL") // Or use this "https://nationalbank.kz/rss/rates_all.xml"
+var URL = "https://nationalbank.kz/rss/rates_all.xml"
 
 func UpdateCurrencies() {
 	ReadURL(URL)
